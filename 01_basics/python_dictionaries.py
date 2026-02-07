@@ -13,7 +13,7 @@ print(myDict.get("model"))
 print(myDict.keys())
 print(myDict.values())
 
-print("-----------------------------------------")
+print("------------------- Change Dictionary Items ----------------------")
 
 myDict["year"] = 2026
 print(myDict)
@@ -21,16 +21,19 @@ print(myDict)
 myDict.update({"year": 2030})
 print(myDict)
 
-print("-----------------------------------------")
+print("------------------- Loop Dictionaries ----------------------")
 
 for data in myDict:
     print(data)
+
+for data in myDict:
+    print(data, myDict[data])
 
 for key, value in myDict.items():
     print(key, value)
 
 
-print("-----------------------------------------")
+print("-------------------- Remove Dictionary Items ---------------------")
 
 print(myDict.pop("year"))
 print(myDict)
@@ -44,7 +47,7 @@ print(myDict)
 del myDict["model"]
 print(myDict)
 
-print("-----------------------------------------")
+print("-------------------- Copy Dictionaries ---------------------")
 
 myDict["model"] = "Mustang"
 myDict["year"] = 2026
@@ -57,7 +60,7 @@ myDict_copy.clear()
 print(myDict_copy)
 print(myDict)
 
-print("-----------------------------------------")
+print("------------------- Nested Dictionaries ----------------------")
 
 myfamily = {
   "child1" : {
@@ -76,5 +79,10 @@ myfamily = {
 print(myfamily)
 
 print(myfamily["child2"]["name"])
+
+print("-----------------------------------------")
+
+squared_numbers = {x: x*x for x in range(6)}
+print(squared_numbers)
 
 print("-----------------------------------------")

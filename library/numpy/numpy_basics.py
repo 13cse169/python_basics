@@ -104,4 +104,8 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    # Every Python file has a built-in variable called __name__.
+    # When you run the file directly, Python sets __name__ to "__main__"
+    # When you import the file, Python sets __name__ to the module’s filename
+    
+    main()
